@@ -31,7 +31,7 @@ Fixed-seed samples from the EMA model at increasing training steps (same latent 
 
 ## Usage
 
-The entire pipeline lives in [`ddpm_cifar10.ipynb`](ddpm_cifar10.ipynb), organized as a sequence of build-and-verify cells:
+The entire pipeline lives in [`DDPM.ipynb`](DDPM.ipynb), organized as a sequence of build-and-verify cells:
 
 1. Config, data (CIFAR-10 in `[-1, 1]`), and the β/ᾱ schedule tables.
 2. The building blocks — timestep embedding, residual block, attention — each with a shape/gradient check.
@@ -43,7 +43,7 @@ Run top to bottom. CIFAR-10 downloads automatically. A single modern GPU trains 
 
 ```bash
 pip install torch torchvision matplotlib
-jupyter notebook ddpm_cifar10.ipynb
+jupyter notebook DDPM.ipynb
 ```
 
 ## Notes
